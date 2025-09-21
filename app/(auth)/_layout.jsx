@@ -1,0 +1,27 @@
+import { View, Text } from 'react-native'
+import React, { useState } from 'react'
+import { Stack } from 'expo-router'
+import MySplashScreen from '../../components/MySplashScreen';
+
+const AuthLayout = () => {
+  return (
+    <>
+      <Stack>
+        <Stack.Screen
+          name="sign-in"
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="sign-up"
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack>
+    </>
+  )
+}
+
+export default AuthLayout
